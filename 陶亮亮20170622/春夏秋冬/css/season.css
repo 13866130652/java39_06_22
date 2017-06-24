@@ -1,0 +1,10 @@
+@charset "utf-8";
+img {
+	float: left;
+}
+
+p {
+	width: 200px;
+	float: left;
+	height: 300px;
+}

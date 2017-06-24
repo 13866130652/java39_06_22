@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			p{
+				text-align: center;
+			}
+			div{
+				float: left;
+				width: 200px;
+				border: 15px solid #71443A;
+			}
+			img{
+				width: 200px;
+				height: 150px;
+			}
+			.div3{
+				clear: left;
+			}
+			.p1{
+				clear: both;
+				width: 460px;
+			}
+		</style>
+	</head>
+	<body>
+		<div onclick="spring()" >
+			<img src="../img/spring.jpg" />
+			<p><a href="#" onclick="spring()">春</a></p>
+		</div>
+		<div onclick="summer()">
+			<img src="../img/summer.jpg" />
+			<p><a href="#" onclick="summer()">夏</a></p>
+		</div>
+		<div class="div3" onclick="autumn()">
+			<img src="../img/autumn.jpg" />
+			<p><a href="#" onclick="autumn()">秋</a></p>
+		</div>
+		<div onclick="winter()">
+			<img src="../img/winter.jpg" />
+			<p><a href="#" onclick="winter()">冬</a></p>
+		</div>
+		<p class="p1"><a href="#" onclick="ref()">刷新本页</a></p>
+	</body>
+</html>
+<script type="text/javascript">
+	function ref(){
+		location.reload();
+		alert("本页已刷新");
+	}
+	function spring(){
+		location="春夏秋冬_1.html";
+	}
+	function summer(){
+		location="春夏秋冬_2.html";
+	}
+	function autumn(){
+		location="春夏秋冬_3.html";
+	}
+	function winter(){
+		location="春夏秋冬_4.html";
+	}
+</script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看一年四季的变化</title>
+    <style>
+        #box{
+            width: 400px;
+            height:430px;
+            margin: 50px auto;
+            border: 1px solid gray;
+        }
+        #box div{
+            width: 199px;
+            height:199px;
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+            float:left;
+        }
+        #box div:nth-of-type(2){
+            border-right:none;
+        }
+        #box div:nth-of-type(4){
+            border-right:none;
+        }
+
+        #box div img{
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        #box div p{
+            margin-top:10px;
+            border-top:1px solid gray ;
+            text-align: center;
+        }
+        #box div p a{
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #box .re{
+            text-align: center;
+
+        }
+        #box .re a{
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function sum(){
+           location.href='xia.html';
+        }
+
+        function spr(){
+            location.href='spring.html';
+        }
+        function aut(){
+            location.href='qiu.html';
+        }
+        function win(){
+            location.href='dong.html';
+        }
+        function  ref() {
+            location.reload();
+        }
+    </script>
+
+</head>
+<body>
+<div id="box">
+    <div><img src="../imgs/t1.jpg"/>
+        <p><a  target="_blank" onclick="spr()">春</a></p></div>
+    <div><img src="../imgs/t2.jpg"/>
+        <p><a  target="_blank" onclick="sum()">夏</a></p></div>
+    <div><img src="../imgs/t3.jpg"/>
+        <p><a  target="_blank" onclick="aut()">秋</a></p></div>
+    <div><img src="../imgs/t4.jpg"/>
+        <p><a  target="_blank" onclick="win()">冬</a></p></div>
+    <p class="re"><a  target="_self" onclick="ref()">刷新本页</a></p>
+</div>
+
+</body>
+</html>

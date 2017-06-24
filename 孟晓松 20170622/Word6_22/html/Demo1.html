@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>查看一年四季的变化</title>
+		<style>
+			.div {
+				margin: 0 auto;
+				width: 460px;
+				height: 400px;
+				border: 1px solid blue;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			ul {
+				position: absolute;
+				list-style: none;
+			}
+			
+			.a {
+				text-align: center;
+				position: absolute;
+				top: 150px;
+				display: inline-block;
+				width: 179px;
+				border: 1px solid black;
+			}
+			
+			.a1 {
+				text-align: center;
+				position: absolute;
+				top: 150px;
+				display: inline-block;
+				width: 179px;
+				border: 1px solid black;
+			}
+			
+			.a2 {
+				text-align: center;
+				position: absolute;
+				display: inline-block;
+				bottom: -18px;
+				width: 179px;
+				border: 1px solid black;
+			}
+			
+			li:nth-of-type(2) {
+				position: absolute;
+				left: 220px;
+				top: 1px;
+			}
+			
+			li:nth-of-type(4) {
+				position: absolute;
+				left: 220px;
+				top: 172px;
+			}
+			
+			li:nth-of-type(3) {
+				position: absolute;
+				top: 172px;
+			}
+			
+			.a3 {
+				text-align: center;
+				position: absolute;
+				top: 344px;
+				display: inline-block;
+				width: 359px;
+				border: 1px solid black;
+			}
+		</style>
+		<script>
+			function show() {
+				location.reload();
+				alert("本页已刷新");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="div">
+			<ul>
+				<li>
+					<img src="../img/1.jpg" /><br />
+					<a class="a1" href="Demo2.html" target="_self">春</a>
+				</li>
+				<li>
+					<img src="../img/2.jpg" /><br />
+					<a class="a" href="Demo3.html" target="_self">夏</a>
+				</li>
+				<li>
+					<img src="../img/3.jpg" /><br />
+					<a class="a2" href="Demo4.html" target="_self">秋</a>
+				</li>
+				<li>
+					<img src="../img/4.jpg" /><br />
+					<a class="a" href="Demo5.html" target="_self">冬</a>
+				</li>
+				<li>
+					<a class="a3" href="#" onclick="show()" target="_self">刷新本页</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

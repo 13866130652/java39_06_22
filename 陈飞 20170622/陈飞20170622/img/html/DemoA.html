@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看一年四季变化</title>
+    <script>
+        function goNewPage1(){
+            location.href="DemoChun.html";
+        }
+        function goNewPage2(){
+            location.href="DemoXia.html";
+        }
+        function goNewPage3(){
+            location.href="DemoQiu.html";
+        }
+        function goNewPage4(){
+            location.href="DemoDong.html";
+        }
+        var i = 0;
+        function ref() {
+            location.reload();
+            alert("第"+(i+1)+"次加载");
+        }
+    </script>
+    <style>
+        div{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 420px;
+            height: 240px;
+            border: 1px solid lightgrey;
+        }
+        #im>img{
+            position: absolute;
+            top: 205px;
+            left: 8px;
+            margin-left: 11px;
+        }
+        #im1>img{
+            position: absolute;
+            top: 205px;
+            left: 214px;
+            margin-left: 20px;
+        }
+        #im2{
+            position: absolute;
+            top: 400px;
+            left: 170px;
+            font-weight: bolder;
+        }
+        #im3>img{
+            margin-left: 15px;
+            margin-top: 7px;
+        }
+        a{
+            margin-left: 11px;
+        }
+        #sp1{
+            position: absolute;
+            top: 180px;
+            left: 90px;
+            font-weight: bolder;
+        }
+        #sp2{
+            position: absolute;
+            top: 180px;
+            left: 315px;
+            font-weight: bolder;
+        }
+        #sp3{
+            position: absolute;
+            top: 370px;
+            left: 90px;
+            font-weight: bolder;
+        }
+        #sp4{
+            position: absolute;
+            top: 370px;
+            left: 315px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#" target="_self" onclick="goNewPage1()"><img src="../img/3.jpg"/><span id="sp1">春</span></a>
+        <a href="#" target="_self" onclick="goNewPage2()" id="im3"id="im3"><img src="../img/1.jpg"/><span id="sp2">夏</span></a>
+        <a href="#" target="_self" onclick="goNewPage3()" id="im"><img src="../img/2.jpg"/><span id="sp3">秋</span></a>
+        <a href="#" target="_self" onclick="goNewPage4()" id="im1"><img src="../img/8.jpg"/><span id="sp4">冬</span></a>
+        <a href="#"target="_self" onclick="ref()" id="im2">刷新本页</a>
+    <div>
+</body>
+</html>

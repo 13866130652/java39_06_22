@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			img{
+				display: block;
+				float: left;
+			}
+			span{
+				display: block;
+				float: left;
+				line-height: 40px;
+				margin-left: 10px;
+			}
+			
+		</style>
+		<script type="text/javascript">
+			function comeback(){
+				history.go(-1);
+			}
+			function forward(){
+				location="春夏秋冬_0.html";
+			}
+			function spring(){
+				location="春夏秋冬_1.html";
+			}
+			function summer(){
+				location="春夏秋冬_2.html";
+			}
+			function autumn(){
+				location="春夏秋冬_3.html";
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<img src="../img/winter.jpg"/><br />
+			<span>
+				冬:水晶帘动微风起，满架蔷薇一院香。<br />
+				冬:小荷才露尖尖角，早有蜻蜓立上头。<br />
+				冬:柳庭风静人眠昼，昼眠人静风庭柳。<br />
+				冬:接天莲叶无穷碧，映日荷花别样红。<br />
+				冬:稻花香里说丰年。听取蛙声一片。<br />
+				冬:清风明月无人管，并作南楼一味凉。<br />
+				<a href="#" onclick="spring()">冬</a>
+				<a href="#" onclick="summer()">夏</a>
+				<a href="#" onclick="autumn()">秋</a>
+				<a href="#" onclick="comeback()">后退</a>
+				<a href="#" onclick="forward()">前进</a>
+			</span>
+		</div>
+	</body>
+</html>

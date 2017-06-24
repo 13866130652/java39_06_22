@@ -1,0 +1,28 @@
+* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			table {
+				border: 1px solid gainsboro;
+			}
+			
+			td {
+				border: 1px solid gainsboro;
+			}
+			
+			img {
+				width: 200px;
+				height: 200px;
+			}
+			#di{
+				text-align: center;
+				line-height: ;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				color: red;
+			}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function forward(){
+            location.href="DemoQiu.html";
+        }
+        function back(){
+//            history.back();
+            location.href="DemoChun.html";
+        }
+        function goNewPage1(){
+            location.href="DemoChun.html";
+        }
+        function goNewPage2(){
+            location.href="DemoQiu.html";
+        }
+        function goNewPage3(){
+            location.href="DemoDong.html";
+        }
+    </script>
+    <style>
+        #img{
+            float: left;
+        }
+        .u1{
+           list-style: none;
+            padding-top: 10px;
+        }
+        .u1>li{
+            line-height: 22px;
+            font-weight: bolder;
+        }
+        .u2{
+            margin-top: -5px;
+        }
+        .u2>li{
+            float: left;
+            list-style: none;
+            margin-right: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" target="_self" onclick="goNewPage2()" id="img"><img src="../img/6.jpg"/></a>
+    <ul class="u1">
+        <li>夏颂——纳清风台榭开怀,徬流水亭轩赏心</li>
+        <li>夏初——槐柳成阴鱼洗尘,樱桃酸烙并尝新</li>
+        <li>夏热——日轮当午凝不去,万国如在烘炉中</li>
+        <li>夏雨——风日撼山翻怒涛,雨点飞空射强弩</li>
+        <li>夏水——涧影风藤竹,檀香闻纸盒</li>
+        <li>夏夜——散发乘西凉,开轩沃先堂</li>
+        <li>夏花——荷叶罗裙一色裁,芙蓉向脸两边开</li>
+        <li>夏鸟——漠漠水田飞白鹭,阴阴夏木啭黄鹂</li>
+        <li>夏婵——锤锤饮清露,流向出疏通</li>
+        <li>夏节——彩线清缠红玉比,小幅斜挂念云俾</li>
+        <li>夏游——松风涧水砸轻音,空山如青竹</li>
+        <li>夏趣——懒腰白玉山,罗提请林中</li>
+    </ul>
+    <ul class="u2">
+        <li><a href="DemoChun.html" target="_self" onclick="goNewPage1()">春天</a></li>
+        <li><a href="DemoQiu.html" target="_self" onclick="goNewPage2()">秋天</a></li>
+        <li><a href="DemoDong.html" target="_self" onclick="goNewPage3()">冬天</a></li>
+        <li><a href="DemoChun.html" target="_self" onclick="back()">后退</a></li>
+        <li><a href="DemoQiu.html" target="_self" onclick="forward();">前进</a></li>
+    </ul>
+</body>
+</html>

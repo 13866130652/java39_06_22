@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a{
+            display: inline-block;
+            margin-left: 70px;
+        }
+        #a{
+            width:500px;
+            border: 1px solid transparent;
+            overflow: hidden;
+        }
+        #a>div{
+            float: left;
+            width: 180px;
+            height: 180px;
+            margin-left: 10px;
+        }
+        #a>#s>a{
+            clear: both;
+            margin-left: 150px;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid transparent;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div id="a">
+    <div><img src="img/1.jpg"/><br/><a href="javascript:location='Test.html'" target="_blank">春</a></div>
+    <div><img src="img/2.jpg"/><br/><a href="javascript:location='Test1.html'" target="_blank">夏</a></div>
+    <div><img src="img/3.jpg"/><br/><a href="javascript:location='Test2.html'" target="_blank">秋</a></div>
+    <div><img src="img/4.jpg"/><br/><a href="javascript:location='Test3.html'" target="_blank">冬</a></div>
+    <div id="s"><a href="javascript:location.reload()">刷新本页</a></div>
+</div>
+</body>
+</html>

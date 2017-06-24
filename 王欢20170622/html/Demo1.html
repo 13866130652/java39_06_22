@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看一年四季的变化</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            height: 300px;
+            width: 360px;
+            margin: 10px auto;
+        }
+        ul li{
+            float: left;
+            margin-top: 5px;
+            list-style: none;
+            text-align: center;
+        }
+        .img1{
+            height: 150px;
+            width: 180px;
+        }
+        ul li a{
+            border: 1px solid #bbbbbb;
+            display: block;
+        }
+        .foot{
+            width: 360px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src="../image/1.jpg" class="img1">
+            <a href="javascript:location.href='Demo3.html'"  target="_self">春</a>
+        </li>
+        <li>
+            <img src="../image/2.jpg">
+            <a href="javascript:location.href='Demo2.html'" target="_self" onclick="">夏</a>
+        </li>
+        <li>
+            <img src="../image/3.jpg">
+            <a href="javascript:location.href='Demo4.html'" target="_self">秋</a>
+        </li>
+        <li>
+            <img src="../image/4.jpg">
+            <a href="javascript:location.href='Demo5.html'" target="_self">冬</a>
+        </li>
+        <li>
+            <a class="foot" href="javascript:" target="_self" onclick="location.reload()">刷新页面</a>
+        </li>
+    </ul>
+</body>
+</html>

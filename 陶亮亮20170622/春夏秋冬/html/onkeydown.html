@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>使用onkeydown事件控制元素位移</title>
+	</head>
+	<link rel="stylesheet" href="../css/onkeydown.css" />
+
+	<body>
+		<DIV class="container">
+			<div id="box"></div>
+		</DIV>
+		<script>
+			function getStyle(obj, attr) {
+				return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr];
+			}
+			document.onkeydown = function move(event) {
+				var box = document.getElementById("box");
+				event = event || window.event; 
+				var left = parseFloat(getStyle(box, 'left')); 
+				var top = parseFloat(getStyle(box, 'top'));
+				var keyNum = event.keyCode; 
+				if(keyNum == 38) { 
+					if(top >= 10) {
+						box.style.top = top - 10 + "px";
+					}
+				} else if(keyNum == 40) { 
+					if(top < 390) {
+						box.style.top = top + 10 + "px";
+					}
+				} else if(keyNum == 37) {
+					if(left >= 10) {
+						box.style.left = left - 10 + "px";
+					}
+				} else if(keyNum == 39) {
+					if(left < 890) {
+						box.style.left = left + 10 + "px";
+					}
+				}
+			}
+			function shape() {
+				var box = document.getElementById("box");
+				box.style.borderWidth = "1px";
+				box.style.borderStyle = "solid";
+				box.style.borderColor = "black";
+				box.style.width = "100px";
+				box.style.height = "100px";
+				box.style.backgroundColor = "blue";
+			}
+			shape();
+		</script>
+
+	</body>
+
+</html>

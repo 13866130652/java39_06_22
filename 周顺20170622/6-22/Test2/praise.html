@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+  <h1>领奖页面</h1>
+  <script>
+  //获得载入的 url路径
+   var preUrl=document.referrer;
+   //获得当前被载入网页页面路径
+   var curUrl=document.URL;
+   alert("当前的页面\n\n url路径为："+curUrl);
+    if(preUrl=="")
+	{
+		document.write("<h2>您不是从领奖页面进入，需要先登录才能进入，5秒后进入登录页面</h2>");
+		window.setTimeout("location.href='login.html'",5000);
+	}
+   else
+   {
+	   
+	 document.write("<h2>大奖赶快拿吧，笔记本，数码相机...</h2>");   
+   }
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 600px;
+            height: 600px;
+            /*outline: 1px solid black;*/
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        ul{
+            width: 100%;
+            height: 100%;
+            list-style: none;
+        }
+        ul>li{
+            width: 40%;
+            height: 45%;
+            border: 1px solid #eeeeee;
+            text-align: center;
+            float: left;
+        }
+        .li1{
+            border-right: none;
+        }
+        .li2{
+            border-bottom: none;
+        }
+        img{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        a{
+            display: inline-block;
+            line-height: 30px;
+            width: 100%;
+            border-top: 1px solid #eeeeee;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+        .a1{
+            width: 80.2%;
+            height: 35px;
+            text-align: center;
+            border: 1px solid #eeeeee;
+            border-top: none;
+            /*margin-top: -40px;*/
+            line-height: 35px;
+
+        }
+    </style>
+    <script>
+        function chage() {
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+<div>
+    <ul>
+        <li class="li1 li2">
+            <img src="../../images/1.jpg"/><br/>
+            <a href="spring.html" target="_self">春</a>
+        </li>
+        <li class="li2">
+            <img src="../../images/2.jpg"/><br/>
+            <a href="summer.html" target="_self">夏</a>
+        </li>
+        <li class="li1">
+            <img src="../../images/3.jpg"/><br/>
+            <a href="autumn.html" target="_self">秋</a>
+        </li>
+        <li>
+            <img src="../../images/4.jpg"/><br/>
+            <a href="winter.html" target="_self">冬</a>
+        </li>
+        <a href="#" target="_self" onclick="chage()" class="a1">刷新本页</a>
+    </ul>
+</div>
+</body>
+</html>

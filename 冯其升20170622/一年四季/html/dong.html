@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冬天</title>
+    <style>
+        div{
+            width: 600px;
+            height: 300px;
+        }
+        a{
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        function back(){
+            history.back();
+        }
+        function forward(){
+            history.forward();
+        }
+        function spr(){
+            location.href='spring.html';
+        }
+        function sum(){
+            location.href='xia.html';
+        }
+        function aut(){
+            location.href='qiu.html';
+        }
+    </script>
+</head>
+<body>
+<div>
+    <img src="../imgs/winter.jpg"/>
+    <span>
+        <a  target="_blank" onclick="spr()">春天</a>
+        <a target="_blank" onclick="sum()">夏天</a>
+         <a target="_blank" onclick="aut()">秋天</a>
+         <a  target="_blank" onclick="back()">后退</a>
+         <a  target="_blank" onclick="forward()">前进</a>
+    </span>
+
+
+</div>
+
+</body>
+</html>
